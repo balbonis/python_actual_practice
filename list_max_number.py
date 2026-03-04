@@ -3,18 +3,11 @@
 # Input: "3 5 7 2 8"
 # Output: "The max number is 8" 
 
-text = input ("enter number sep by space: ")
-numbers = text.split()
-max_number = numbers[0]
-
-for ctr in numbers:
-    max_number = max(max_number,ctr)
-
-print(f"The max number is : {max_number}")
+numbers = [int (n) for n in input ("Enter Numbers sep by space: ").split()]
+print (f"The max number is: ", max(numbers))
 
 
-#now , print the number range based deonding on the max number
-for ctr in range(1, int(max_number) + 1):
-    print(ctr)
-
-
+#List the number from 1 to max_numbe automatically
+my_range = int(max_number) 
+for n in range (1, my_range+1):
+    print(n)    
