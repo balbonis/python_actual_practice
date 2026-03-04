@@ -1,6 +1,10 @@
-text = input("Enter numbers separated by space:")
+text = input ("enter number sep by space: ")
 numbers = text.split()
 
-numbers = [int(n) for n in numbers]
-max_number = numbers[0]  
-print (f"Max number is {max_number}")
+max_number = numbers[0]
+
+
+for ctr in numbers:
+    max_number = max(max_number,ctr)
+
+    print(f"The max number is : {max_number}")
