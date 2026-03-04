@@ -28,7 +28,9 @@ try:
         print (list(counts.keys())," ",list(counts.values()))
         
         
-        
+        #remove duplicates
+        numbers = [int(n) for n in input("Enter numbers:").split()]
+        print (f"removing duplicates",list(set(numbers)))
         
         
             
