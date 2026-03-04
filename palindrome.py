@@ -7,11 +7,9 @@
 
 try:
   while True:
-    text = input("Enter Text: ")
-    text = text.replace (" ", "")
+    text = input ("Enter text: ").replace(" ","").lower()
 
-
-    if text.lower() == text[::-1].lower():
+    if text == text[::-1]:
       print (f"This is palindrome")
     else:
       print (f"This is not palindrome")
