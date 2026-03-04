@@ -1,5 +1,5 @@
 text = input ("Enter Text: ")
-text = text.repalce(" ","")
+text = text.replace(" ","")
 
 if text.lower() == text[::-1].lower():
   print(f"{text} This is a palindrome.")
