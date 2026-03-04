@@ -7,12 +7,15 @@
 
 try:
   while True:
-    text = input ("Enter Text: ")
-    text = text.replace(" ","")
+    text = input("Enter Text: ")
+    text = text.replace (" ", "")
+
 
     if text.lower() == text[::-1].lower():
-      print(f"{text} This is a palindrome.")
+      print (f"This is palindrome")
     else:
-      print(f"{text} This is not palindrome.")
+      print (f"This is not palindrome")
+
+
 except KeyboardInterrupt:
-      print ("Progam Stopped")
+    print (f"App terminated")
